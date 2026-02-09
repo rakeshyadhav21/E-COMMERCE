@@ -25,13 +25,13 @@ const Navbar = () => {
                 { /* Left - logo */ }
                 <div>
                     <Link to="/" className="text-2xl font-medium">
-                        Rabbit
+                        Prestige Avenue
                     </Link>
                 </div>
 
 
                 { /* Center - Navigation Links */ }
-                <div className="hidden md:flex space-x-6">
+                <div className="hidden md:flex space-x-5 pr-4">
                     <Link to="#" className="text-gray-700 hover:text-black text-sm font-medium uppercase">
                         Men
                     </Link>

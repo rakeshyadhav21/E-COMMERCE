@@ -16,8 +16,8 @@ const Topbar = () =>{
                         <RiTwitterXLine className="h-4 w-4"/>
                     </a>
                 </div>
-                <div className="text-sm text-center">
-                    <span>We ship worldwide - Fast and reliable shipping!</span>
+                <div className="text-m text-center pl-20">
+                    <span>Premium shopping experience with worldwide fast delivery!</span>
                 </div>
                 <div className="text-sm hidden md:block">
                     <a href="tel:+1234567890" className="hover: text-gray-300"></a>
