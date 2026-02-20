@@ -1,7 +1,15 @@
 import { IoMdAdd, IoMdClose } from "react-icons/io";
 import CartComponents from "../Cart/CartContents";
+import { useNavigate } from "react-router-dom";
 
 const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
+
+    const navigate = useNavigate();
+
+    const handleCheckout = () => {
+        toggleCartDrawer();
+        navigate("/checkout")
+    }
 
     return <div className={`fixed top-0 right-0 w-3/4 sm:w-1/2 md:w-2/4 h-full bg-white shadow-lg transform
     transition-transform duraion-300 flex flex-col z-50 
@@ -22,7 +30,9 @@ const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
         </div>
         { /* Checkout Button fixed at the bottom */ }
         <div className="p-4 bg-white sticky bottom-0">
-            <button className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800
+            <button 
+            onClick={handleCheckout}
+            className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800
             transition">
                 Checkout
             </button>
