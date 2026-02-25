@@ -18,7 +18,7 @@ const AdminSidebar = () => {
     <div className="p-6 flex flex-col min-h-screen">
       <div>
         <Link to="/admin" className="text-2xl font-semibold text-white">
-          Rabbit
+          Prestige Avenue
         </Link>
 
         <h2 className="text-gray-300 mt-6 mb-6">Admin Dashboard</h2>
